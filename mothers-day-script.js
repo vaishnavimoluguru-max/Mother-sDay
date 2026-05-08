@@ -2,21 +2,20 @@ const intro = document.getElementById("intro");
 const slideshow = document.getElementById("slideshow");
 const albumStage = document.getElementById("albumStage");
 const startButton = document.getElementById("startButton");
-const music = document.getElementById("backgroundMusic");
 const envelopeScreen = document.getElementById("envelopeScreen");
 const envelope = document.getElementById("envelope");
 const clickHint = document.getElementById("clickHint");
 
 const photos = [
-  { src: "images/photo1.jpg", caption: "Our sweetest beginning" },
-  { src: "images/photo2.jpg", caption: "A memory wrapped in love" },
-  { src: "images/photo3.jpg", caption: "Your smile, our home" },
-  { src: "images/photo4.jpg", caption: "Little moments, forever kept" },
-  { src: "images/photo5.jpg", caption: "Every day feels warmer with you" },
-  { src: "images/photo6.jpg", caption: "The heart of our family" },
-  { src: "images/photo7.jpg", caption: "Love in every tiny detail" },
-  { src: "images/photo8.jpg", caption: "Our biggest blessing" },
-  { src: "images/photo9.jpg", caption: "Always, always Amma" }
+  { src: "images/mom1.jpeg", caption: "Our sweetest beginning" },
+  { src: "images/mom2.jpeg", caption: "A memory wrapped in love" },
+  { src: "images/mom3.jpeg", caption: "Your smile, our home" },
+  { src: "images/mom4.jpeg", caption: "Little moments, forever kept" },
+  { src: "images/mom5.jpeg", caption: "Every day feels warmer with you" },
+  { src: "images/mom6.jpeg", caption: "The heart of our family" },
+  { src: "images/mom7.jpeg", caption: "Love in every tiny detail" },
+  { src: "images/mom8.jpeg", caption: "Our biggest blessing" },
+  { src: "images/mom9.jpeg", caption: "Always, always Amma" }
 ];
 
 let currentPhoto = 0;
@@ -74,7 +73,7 @@ function endSlideshow() {
 }
 
 function launchConfetti() {
-  const colors = ["#ffd8c7", "#d7efe5", "#fff1a8", "#f5b6a3", "#ffffff"];
+  const colors = ["#ffd447", "#f3aa22", "#fff1a6", "#b9d88a", "#ffffff"];
   const pieces = 92;
 
   for (let i = 0; i < pieces; i += 1) {
@@ -91,14 +90,8 @@ function launchConfetti() {
   }
 }
 
-startButton.addEventListener("click", async () => {
+startButton.addEventListener("click", () => {
   startButton.disabled = true;
-
-  try {
-    await music.play();
-  } catch (error) {
-    console.warn("Audio could not play. Replace the placeholder src with a valid audio file.", error);
-  }
 
   intro.classList.add("exiting");
 
