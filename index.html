@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Mother's Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mothers-day-style.css">
+</head>
+<body>
+  <audio id="backgroundMusic" src="path_to_soft_instrumental.mp3" loop preload="auto"></audio>
+
+  <main>
+    <section class="screen intro" id="intro" aria-label="Opening">
+      <div class="intro-inner">
+        <h1 class="intro-title">Happy Mother's Day</h1>
+        <button class="start-button" id="startButton" type="button">Start Our Journey</button>
+      </div>
+    </section>
+
+    <section class="screen slideshow hidden" id="slideshow" aria-label="Family photo slideshow">
+      <div class="album-stage" id="albumStage"></div>
+    </section>
+
+    <section class="screen envelope-screen hidden" id="envelopeScreen" aria-label="Mother's Day letter">
+      <div class="envelope-wrap">
+        <div class="click-hint" id="clickHint">Click Me</div>
+        <button class="envelope" id="envelope" type="button" aria-label="Open the envelope">
+          <div class="letter" id="letter">
+            <p>Dear Amma,</p>
+            <p>Happy Mother’s Day to the most incredible person in our lives.</p>
+            <p>Thank you for everything you’ve done for us — for every sacrifice, every sleepless night, every worry you carried silently, and every little thing that often goes unnoticed. Thank you for tolerating us through all our tantrums, mood swings, stubborn moments, and chaos. Somehow, no matter how difficult we were, you always chose patience, love, and understanding.</p>
+            <p>Thank you for always making our favorite food whenever we crave it, even when you’re tired. Thank you for showing up for us every single time — even on the days when you probably didn’t have the energy to. Your love has always been the kind that asks for nothing in return, yet gives us everything.</p>
+            <p>You inspire us every day to become the best version of ourselves. The strength, kindness, resilience, and love you carry so effortlessly are things we hope to learn from and carry forward in our own lives. No one on this planet could ever replace you, because there is only one “Mom” — and we truly hit the jackpot with ours.</p>
+            <p>We love you more than words could ever explain. To the moon and back… and maybe even a little more than you love us hehe ❤️</p>
+            <p>Thank you for being our safe place, our biggest supporter, and the heart of our family.</p>
+            <p>We love you endlessly.</p>
+          </div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-body"></div>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="mothers-day-script.js" defer></script>
+</body>
+</html>
